@@ -147,3 +147,4 @@ cython_debug/
 
 # VS Code
 .vscode/
+.kilo/
