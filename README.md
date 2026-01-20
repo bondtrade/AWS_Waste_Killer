@@ -10,12 +10,14 @@ A single-file Python script to find and delete orphaned AWS EBS volumes (hard dr
 ## 🚀 Quick Start (5 Seconds)
 
 ### Option 1: Run via Curl (The Fast Way)
+
 ```bash
 curl -O https://raw.githubusercontent.com/[YOUR_USERNAME]/aws-waste-killer/main/aws_waste_killer.py
 python aws_waste_killer.py
 ```
 
 ### Option 2: Clone & Run
+
 ```bash
 git clone https://github.com/[YOUR_USERNAME]/aws-waste-killer.git
 cd aws-waste-killer
@@ -23,14 +25,17 @@ python aws_waste_killer.py
 ```
 
 ## 🛠️ Requirements
+
 - Python 3.8+
 - AWS Credentials configured (`aws configure` or `~/.aws/credentials`)
 - `boto3` library:
+
   ```bash
   pip install boto3
   ```
 
 ## 🛡️ Safety First
+
 - **Dry-Run by Default**: Running the script without flags ONLY lists waste. It deletes nothing.
 - **Manual Confirmation**: You must type `yes` to authorize any deletion.
 - **Transparency**: The code is a single file (`aws_waste_killer.py`). Audit it yourself in 30 seconds.
@@ -51,9 +56,11 @@ TOTAL POTENTIAL SAVINGS: $15.00 / month
 ```
 
 To actually delete these volumes, run:
+
 ```bash
 python aws_waste_killer.py --confirm
 ```
 
 ## ⚠️ Disclaimer
+
 This tool deletes cloud resources. While it checks for the "available" (detached) state, you are responsible for your own infrastructure. **Always check the dry-run output before confirming.**
