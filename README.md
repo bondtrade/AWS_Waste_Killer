@@ -12,14 +12,14 @@ A single-file Python script to find and delete orphaned AWS EBS volumes (hard dr
 ### Option 1: Run via Curl (The Fast Way)
 
 ```bash
-curl -O https://raw.githubusercontent.com/[YOUR_USERNAME]/aws-waste-killer/main/aws_waste_killer.py
+curl -O https://raw.githubusercontent.com/bondtrade/AWS_Waste_Killer/master/aws_waste_killer.py
 python aws_waste_killer.py
 ```
 
 ### Option 2: Clone & Run
 
 ```bash
-git clone https://github.com/[YOUR_USERNAME]/aws-waste-killer.git
+git clone https://github.com/bondtrade/AWS_Waste_Killer.git
 cd aws-waste-killer
 python aws_waste_killer.py
 ```
